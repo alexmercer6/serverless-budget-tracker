@@ -4,7 +4,7 @@ function App() {
   const [message, setMessage] = useState('');
 
   useEffect(() => {
-    fetch('/api/HttpExample?name=React')
+    fetch('/api/HttpExample?name=Alex')
       .then((response) => response.text())
       .then((data) => setMessage(data));
   }, []);
